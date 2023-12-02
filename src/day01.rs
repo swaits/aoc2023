@@ -70,16 +70,24 @@ mod tests {
     use super::*;
 
     #[test]
-    fn test_day01_part1() {
+    fn test_part1_example() {
         let input = "1abc2\npqr3stu8vwx\na1b2c3d4e5f\ntreb7uchet";
         assert_eq!(day01_part1(input), 142);
+    }
+
+    #[test]
+    fn test_part1_actual() {
         assert_eq!(day01_part1(INPUT), 54597);
     }
 
     #[test]
-    fn test_day01_part2() {
+    fn test_part2_example() {
         let input="two1nine\neightwothree\nabcone2threexyz\nxtwone3four\n4nineeightseven2\nzoneight234\n7pqrstsixteen";
         assert_eq!(day01_part2(input), 281);
+    }
+
+    #[test]
+    fn test_part2_actual() {
         assert_eq!(day01_part2(INPUT), 54504);
     }
 }
